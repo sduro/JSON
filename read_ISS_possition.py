@@ -30,8 +30,9 @@ def parseISSDataFeed():
 	lat = data['latitude']
 	lng = data['longitude']
 	alt = data['altitude']
+	url = 'https://www.google.es/maps/@'+str(lat)+','+str(lng)+',9z'
 
-	return [name, lng, lat, alt]
+	return [name, lng, lat, alt, url]
 
 def main():
         print (parseISSDataFeed())
